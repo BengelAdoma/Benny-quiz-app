@@ -77,3 +77,6 @@ nav{
     top: 30px;
     right:20px
 }
+.answer{
+    display: none;
+}
