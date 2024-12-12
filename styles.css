@@ -1,10 +1,14 @@
 *{
-    background-color: whitesmoke;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+main{
+   margin: 20px;
+}
 
 header{
+    background-color: #4A628A;
     padding: 20px;
     border: 2px solid black;
     text-align: center;
@@ -12,23 +16,23 @@ header{
     top: 0;
     width: 100%;
     z-index: 1;
+    color: white;
+    box-shadow: 0px 5px 15px#4A628A;
     
     
 }
 
 .question_card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(148,241,246,1) 0%, rgba(148,189,246,1) 100.7% );
     border: 2px double black;
     padding: 2rem;
     border-radius: 10px;
-    width: 20vw;
+    width: 80%;
     height: 20vh;
     margin: 40px;  
     position: relative;
-    left: 40%;
+    color: white;
+    box-shadow: 5px 5px 15px#4A628A;
 }
 
 
@@ -37,10 +41,39 @@ button{
     width: 150px;
     height: 40px;
     border-radius: 5px;
+    background-color: white;
    
 }
 body{
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+footer{
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #4A628A;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    color:white;
+    transition: 0.2s;
+}
+.icon:hover{
+ color:black;
+ 
+}
+.book{
+    position:relative;
+    top: -20%;
+    left: 90%;
 }
