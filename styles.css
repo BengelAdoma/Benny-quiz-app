@@ -4,7 +4,10 @@
 
 }
 main{
-   margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 header{
@@ -23,13 +26,10 @@ header{
 }
 
 .question_card{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(148,241,246,1) 0%, rgba(148,189,246,1) 100.7% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(34, 175, 182) 0%, rgb(156, 175, 202) 100.7% );
     border: 2px double black;
     padding: 2rem;
     border-radius: 10px;
-    width: 80%;
-    height: 20vh;
-    margin: 40px;  
     position: relative;
     color: white;
     box-shadow: 5px 5px 15px#4A628A;
@@ -73,7 +73,7 @@ nav{
  
 }
 .book{
-    position:relative;
-    top: -20%;
-    left: 90%;
+    position:absolute;
+    top: 30px;
+    right:20px
 }
