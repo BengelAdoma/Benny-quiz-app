@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Quiz Page</h1>
+    </header>
+    <main>
+        <form id="questionForm">
+            <label for="question">Your Question:</label>
+            <textarea id="question" cols="30" rows="4" data-js="questionTextarea" maxlength="76"></textarea>
+            <p class="remaining-characters">
+                <span data-js="remaining-char">76</span>
+                characters left
+            </p>
+            
+            <label for="answer">Your Answer:</label>
+            <textarea id="answer" cols="30" rows="4" data-js="answerTextarea" maxlength="150"></textarea>
+            <p class="remaining-character">
+                <span data-js="remaining-characters">150</span>
+                characters left
+            </p>
+            <label for="tag">Tag:</label>
+            <input type="text" id="tag">
+
+            <button type="submit" class="submit_button">Submit</button>
+        </form>
+
+        
+        <div id="questionsContainer"></div>
+    </main>
+    <footer>
+        <nav>
+            <a href="./index.html"><i class="fa-solid fa-house fa-xl icon"></i></a>
+            <a href="./bookmark.html"><i class="fa-regular fa-bookmark fa-xl icon"></i></a>
+            <a href="./add.html"><i class="fa-solid fa-plus fa-xl"></i></a>
+            <a href="./profile.html"><i class="fa-regular fa-user fa-xl icon"></i></a>
+        </nav>
+    </footer>
+
+    <script src="./add.js"></script>
+</body>
+</html>
